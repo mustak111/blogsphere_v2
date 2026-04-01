@@ -1,0 +1,82 @@
+/* Login page reuses Register.css styles via the shared auth-page classes */
+/* Additional login-specific styles below */
+
+.auth-stats {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: white;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  opacity: 0.8;
+  color: white;
+}
+
+.auth-testimonial {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.testimonial-text {
+  font-size: 0.95rem;
+  font-style: italic;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.testimonial-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.testimonial-author strong {
+  display: block;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.testimonial-author span {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .auth-stats {
+    display: none;
+  }
+
+  .auth-testimonial {
+    display: none;
+  }
+}
